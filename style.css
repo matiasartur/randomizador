@@ -11,6 +11,7 @@ body {
         background: linear-gradient(135deg, black 50%, rgb(46, 1, 1));
         min-height: 100dvh;
         margin: 0;
+        overflow-x: hidden;
 }
 
 img {
@@ -35,6 +36,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 64px;
+    flex-wrap: wrap;
 }
 
 input {
@@ -97,8 +99,12 @@ button {
 
 @media screen and (max-width: 600px) {
 
+    .input-num {
+        gap: 20px;
+    }
+
     img {
-        margin: 60px auto 40px auto;
+        margin: 100px auto 100px auto;
     }
 
     p {

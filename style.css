@@ -9,6 +9,8 @@
 
 body {
         background: linear-gradient(135deg, black 50%, rgb(46, 1, 1));
+        min-height: 100dvh;
+        margin: 0;
 }
 
 img {
@@ -57,6 +59,7 @@ input::-webkit-inner-spin-button {
 }
 
 button {
+    border: none;
     background-color: red;
     width: 342px;
     height: 72px;

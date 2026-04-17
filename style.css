@@ -8,14 +8,14 @@
 }
 
 body {
-        background-color: black;
+        background: linear-gradient(135deg, black 50%, rgb(46, 1, 1));
 }
 
 img {
-    width: 583px;
-    height: 374px;
-    display: flex;
-    flex-direction: column;
+    width: 90%;
+    max-width: 583px;
+    height: auto;
+    display: block;
     margin: 50px auto 126px auto;
 }
 
@@ -38,7 +38,7 @@ p {
 input {
     width: 342px;
     height: 74px;
-    border: 1px solid white 0.2;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 14px;
     background-color: rgba(255, 255, 255, 0.2);
     font-size: 40px;
@@ -57,7 +57,7 @@ input::-webkit-inner-spin-button {
 }
 
 button {
-    background-color: #AEC346;
+    background-color: red;
     width: 342px;
     height: 72px;
     border-radius: 10px;
@@ -67,7 +67,7 @@ button {
     display: block;
     margin: 40px auto;
     cursor: pointer;
-    box-shadow: 0px 18px 40px 0px #AEC34659;
+    box-shadow: 0px 18px 40px 0px rgba(65, 1, 1, 0.6);
 }
 
 button:hover {
@@ -75,9 +75,53 @@ button:hover {
 }
 
 .resultado {
-    color: #AEC346;
+    color: red;
     font-size: 48px;
     font-weight: 700;
     text-align: center;
     margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    max-width: 342px;
+}
+
+button {
+    width: 100%;
+    max-width: 342px;
+}
+
+@media screen and (max-width: 600px) {
+
+    img {
+        margin: 60px auto 40px auto;
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .input-num {
+        flex-direction: column; /* empilha os inputs */
+        align-items: center;
+        gap: 20px;
+    }
+
+    input {
+        height: 60px;
+        font-size: 28px;
+    }
+
+    button {
+        height: 60px;
+        font-size: 28px;
+        margin: 30px auto;
+    }
+
+    .resultado {
+        font-size: 36px;
+    }
 }

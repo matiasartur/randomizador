@@ -16,7 +16,7 @@ img {
     height: 374px;
     display: flex;
     flex-direction: column;
-    margin: 156px auto 126px auto;
+    margin: 50px auto 126px auto;
 }
 
 p {
@@ -50,6 +50,12 @@ input {
     cursor: pointer;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 button {
     background-color: #AEC346;
     width: 342px;
@@ -66,4 +72,12 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+.resultado {
+    color: #AEC346;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
 }
